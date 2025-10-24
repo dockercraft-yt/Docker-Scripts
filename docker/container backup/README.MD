@@ -1,9 +1,4 @@
 # 🐳 Docker Stack Backup – Dokumentation
-
-**Version:** 1.8  
-**Stand:** 18.10.2025  
-**Autor:** Dockercraft  
-
 ---
 
 ## 📋 Übersicht

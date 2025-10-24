@@ -1,11 +1,3 @@
----
-title: "Docker Image Cleanup Script"
-author: "Stefan"
-date: "2025-10-19"
-version: "1.0"
-description: "Dokumentation zum Bash-Skript zur automatischen Bereinigung ungenutzter Docker-Images."
----
-
 # 🧾 Docker Image Cleanup Script
 
 ### Inhaltsverzeichnis
