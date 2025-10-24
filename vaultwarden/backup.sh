@@ -34,7 +34,8 @@ fi
 
 # === Backup erstellen ===
 echo "[$(date)] Erstelle Backup unter: $BACKUP_FILE" | tee -a "$LOGFILE"
-tar -czf "$BACKUP_FILE" -C "$CONTAINER_DATA_DIR" . >> "$LOGFILE" 2>&1
+tar -czf "$BACKUP_FILE" -C "$CONTAINER_DATA_DIR" --transform='s|^\./||' . >> "$LOGFILE" 2>&1
+#tar -czf "$BACKUP_FILE" -C "$CONTAINER_DATA_DIR" . >> "$LOGFILE" 2>&1
 
 # === Container wieder starten ===
 echo "[$(date)] Starte Container: $CONTAINER" | tee -a "$LOGFILE"
