@@ -1,3 +1,5 @@
+[Deutsch](./README.md) | [English](./README_EN.md)
+
 # 🐳 Docker-Scripts
 
 Dieses Repository enthält eine Sammlung von nützlichen Shell-Skripten rund um Docker-Container, deren Verwaltung und Backup-Prozesse.  
@@ -11,9 +13,11 @@ Alle Skripte wurden mit dem Ziel entwickelt, wiederkehrende Aufgaben zu automati
 Docker-Scripts/
 │
 ├── Docker/
-│   ├── Container Backup/      # Backup von Container-Daten und Volumes
-│   ├── Container Restore/     # Wiederherstellen von Backups
-│   └── Image Cleaner/         # Entfernt ungenutzte Docker-Images
+│   ├── Docker Container Backup/      # Backup von Container-Daten und Volumes
+│   ├── Docker Container Restore/     # Wiederherstellen von Backups
+│   ├── Docker Installer/             # Installiert Docker, Docker Compose und einen User
+│   ├── Docker Volume Cleaner/        # Entfernt ungenutzte Docker-Volumes
+│   └── Docker Image Cleaner/         # Entfernt ungenutzte Docker-Images
 │
 ├── paperless-ngx/             # Backup-Skript für Paperless-ngx
 └── vaultwarden/               # Backup-Skript für Vaultwarden
@@ -29,9 +33,11 @@ Enthält generische Skripte für die Docker-Verwaltung:
 
 | Ordner | Beschreibung |
 |--------|---------------|
-| **Container Backup** | Erstellt automatisierte Backups von Container-Daten, inklusive Volumes. |
-| **Container Restore** | Stellt Backups aus dem Backup-Verzeichnis wieder her. |
-| **Image Cleaner** | Bereinigt ungenutzte Images, um Speicherplatz freizugeben. |
+| **Docker Container Backup** | Erstellt automatisierte Backups von Container-Daten, inklusive Volumes. |
+| **Docker Container Restore** | Stellt Backups aus dem Backup-Verzeichnis wieder her. |
+| **Docker Image Cleaner** | Bereinigt ungenutzte Images, um Speicherplatz freizugeben. |
+| **Docker Installer** | Installiert Docker, Docker Compose, erstellt einen User "docker" mit der Gruppe "docker"|
+| **Docker Volume Cleaner**| Entfernt nicht mehr benötigte Docker Volumes die unnötig Speicherplatz verbrauchen|
 
 Jedes Unterverzeichnis enthält eine eigene `README.md` mit Details zur Verwendung.
 
