@@ -2,88 +2,88 @@
 
 # 🐳 Docker-Scripts
 
-Dieses Repository enthält eine Sammlung von nützlichen Shell-Skripten rund um Docker-Container, deren Verwaltung und Backup-Prozesse.  
-Alle Skripte wurden mit dem Ziel entwickelt, wiederkehrende Aufgaben zu automatisieren und die Administration von Containern zu vereinfachen.
+This repository contains a collection of useful shell scripts for Docker containers, their management and backup processes.  
+All scripts were created to automate recurring tasks and simplify container administration.
 
 ---
 
-## 📂 Verzeichnisstruktur
+## 📂 Directory structure
 
 ```
 Docker-Scripts/
 │
 ├── Docker/
-│   ├── Docker Container Backup/      # Backup von Container-Daten und Volumes
-│   ├── Docker Container Restore/     # Wiederherstellen von Backups
-│   ├── Docker Installer/             # Installiert Docker, Docker Compose und einen User
-│   ├── Docker Volume Cleaner/        # Entfernt ungenutzte Docker-Volumes
-│   └── Docker Image Cleaner/         # Entfernt ungenutzte Docker-Images
+│   ├── Docker Container Backup/      # Backup of container data and volumes
+│   ├── Docker Container Restore/     # Restore backups
+│   ├── Docker Installer/             # Installs Docker, Docker Compose and a user
+│   ├── Docker Volume Cleaner/        # Removes unused Docker volumes
+│   └── Docker Image Cleaner/         # Removes unused Docker images
 │
-├── paperless-ngx/             # Backup-Skript für Paperless-ngx
-└── vaultwarden/               # Backup-Skript für Vaultwarden
+├── paperless-ngx/             # Backup script for Paperless-ngx
+└── vaultwarden/               # Backup script for Vaultwarden
 
 ```
 
 ---
 
-## ⚙️ Inhalt & Funktionen
+## ⚙️ Content & Features
 
 ### 🧱 Docker
-Enthält generische Skripte für die Docker-Verwaltung:
+Contains generic scripts for Docker management:
 
-| Ordner | Beschreibung |
-|--------|---------------|
-| **Docker Container Backup** | Erstellt automatisierte Backups von Container-Daten, inklusive Volumes. |
-| **Docker Container Restore** | Stellt Backups aus dem Backup-Verzeichnis wieder her. |
-| **Docker Image Cleaner** | Bereinigt ungenutzte Images, um Speicherplatz freizugeben. |
-| **Docker Installer** | Installiert Docker, Docker Compose, erstellt einen User "docker" mit der Gruppe "docker"|
-| **Docker Volume Cleaner**| Entfernt nicht mehr benötigte Docker Volumes die unnötig Speicherplatz verbrauchen|
+| Folder | Description |
+|--------|-------------|
+| **Docker Container Backup** | Creates automated backups of container data, including volumes. |
+| **Docker Container Restore** | Restores backups from the backup directory. |
+| **Docker Image Cleaner** | Cleans up unused images to free disk space. |
+| **Docker Installer** | Installs Docker, Docker Compose and creates a "docker" user in the "docker" group. |
+| **Docker Volume Cleaner** | Removes unused Docker volumes that unnecessarily consume disk space. |
 
-Jedes Unterverzeichnis enthält eine eigene `README.md` mit Details zur Verwendung.
+Each subfolder contains its own `README.md` with usage details.
 
 ---
 
 ### 📦 Paperless-NGX
-Skript zum automatisierten Backup der **Paperless-NGX**-Docker-Instanz (Dokumentenmanagementsystem).  
-Beinhaltet die Sicherung von Datenbank und Dokumentenverzeichnis.
+Script for automated backup of the **Paperless-NGX** Docker instance (document management system).  
+Includes backup of the database and document directory.
 
-📄 [Mehr Infos in `paperless-ngx/README.md`](./paperless-ngx/README.md)
+📄 [More info in `paperless-ngx/README.md`](./paperless-ngx/README.md)
 
 ---
 
 ### 🔐 Vaultwarden
-Skript für **Vaultwarden** (selbstgehosteter Passwortmanager).  
-Führt vollständige Sicherungen von Konfigurations- und Datenverzeichnissen durch.
+Script for **Vaultwarden** (self-hosted password manager).  
+Performs full backups of configuration and data directories.
 
-📄 [Mehr Infos in `vaultwarden/README.md`](./vaultwarden/README.md)
-
----
-
-## 🧰 Voraussetzungen
-
-- Docker (mind. Version 20.x)
-- Bash-Shell (Linux oder WSL unter Windows)
-- Schreibrechte auf das Ziel-Backupverzeichnis
+📄 [More info in `vaultwarden/README.md`](./vaultwarden/README.md)
 
 ---
 
-## 🚀 Verwendung
+## 🧰 Requirements
 
-Klonen des Repositories:
+- Docker (at least version 20.x)
+- Bash shell (Linux or WSL on Windows)
+- Write permissions for the target backup directory
+
+---
+
+## 🚀 Usage
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/dockercraft-yt/Docker-Scripts.git
 cd Docker-Scripts
 ```
 
-Beispiel: Container-Backup starten
+Example: start a container backup
 
 ```bash
 cd Docker/Container\ Backup
 bash backup.sh
 ```
 
-Backup wiederherstellen:
+Restore a backup:
 
 ```bash
 cd Docker/Container\ Restore
@@ -92,17 +92,17 @@ bash restore.sh
 
 ---
 
-## 🧾 Lizenz
+## 🧾 License
 
-Dieses Projekt steht unter der **MIT-Lizenz**.  
-Details findest du in der Datei [`LICENSE`](./LICENSE).
+This project is licensed under the **MIT License**.  
+See the [`LICENSE`](./LICENSE) file for details.
 
 ---
 
-## 📢 Mitwirken
+## 📢 Contributing
 
-Pull Requests sind willkommen!  
-Wenn du Ideen oder Verbesserungen hast, öffne gerne ein Issue oder reiche direkt einen PR ein.
+Pull requests are welcome!  
+If you have ideas or improvements, please open an issue or submit a PR.
 
 ---
 
