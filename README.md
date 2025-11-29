@@ -1,4 +1,4 @@
-[Deutsch](./README.md) | [English](./README_EN.md)
+[Deutsch](./README_DE.md) | [English](./README.md)
 
 # 🐳 Docker-Scripts
 
